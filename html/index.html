@@ -69,6 +69,7 @@
             color: white;
             font-size: 1rem;
             margin-top: 1rem;
+            padding: 0.75rem;
         }
         
         .btn-light-git,
@@ -111,7 +112,7 @@
         }
 
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
         /* Your CSS rules for mobile devices go here */
             .testo-titolo {
                 font-size: 24px;
@@ -131,6 +132,9 @@
             .card-img:hover {
                 transform: none;
             }
+            .btn-dark-antonio {
+                width: 85%;
+            }
             
         }
         
@@ -138,29 +142,17 @@
   </head>
   <body>
     <div class="container">
+        <!-- import del js di bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg" style="background-color: white;"> 
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img
-                    src="logo.svg"
-                    alt="Logo"
-                    width="24"
-                    height="24"
-                    class="d-inline-block align-text-top"
-                />
-                AV
+                    <img src="logo.svg" alt="Logo" width="24" height="24" class="d-inline-block align-text-top"/>
+                    AV
                 </a>
-                <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
@@ -184,15 +176,14 @@
                             <h5 class="testo-titolo ms-4 mt-4 mb-4">Ciao, Io sono Antonio, <br> uno sviluppatore <br> con esperienza in UI/UX.</h5>
                             <p class=" ms-4 sottotitolo" style="width: 80%;">Ho una forte attenzione ai dettagli e un'attitudine creativa che mi permette di tradurre le idee in soluzioni innovative.</p>
                         </div>
-                        <div class="row gy-2 gx-0"> 
+                        <div class="row"> 
                             <div class="col-lg">
-                                <input type="button" class="btn btn-dark-antonio mt-lg-5 ms-4" value="Contattami">
-                            </div>
-                            <div class="col">
-                                <a href="#" class="btn btn-light-git ms-4 mt-lg-5" > <i class="bi bi-github"></i> </a>
-                                <a href="#" class="btn btn-light-link ms-4 mt-lg-5" > <i class="bi bi-linkedin"></i> </a>
-                                <a href="#" class="btn btn-light-x ms-4 mt-lg-5" > <i class="bi bi-twitter"></i> </a>
-                                <a href="#" class="btn btn-light-dribble ms-4 mt-lg-5" > <i class="bi bi-dribbble"></i> </a>
+                               <a href="mailto:antonio2000valentino@gmail.com" class="btn btn-dark-antonio ms-4 mt-lg-5" >Contattami</a>
+                            
+                                <a href="https://github.com/antoniovalentino" class="btn btn-light-git ms-4 mt-lg-5" > <i class="bi bi-github"></i> </a>
+                                <a href="https://www.linkedin.com/in/antonio-valentino-325050247" class="btn btn-light-link ms-4 mt-lg-5" > <i class="bi bi-linkedin"></i> </a>
+                                <a href="https://twitter.com/antoniovalenti5" class="btn btn-light-x ms-4 mt-lg-5" > <i class="bi bi-twitter"></i> </a>
+                                <a href="https://dribbble.com/totoval" class="btn btn-light-dribble ms-4 mt-lg-5" > <i class="bi bi-dribbble"></i> </a>
                             </div>
                         </div>  
                     </div>
