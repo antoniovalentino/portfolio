@@ -40,8 +40,100 @@
             color: rgba(255, 255, 255, 0.7);
         }
         .card {
-            border-radius: 1.4rem;
+            border-radius: 1.8rem;
+            overflow: hidden;
+            border: none;
         }
+
+        .freccia {
+            position: absolute; 
+            color: white; 
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-right: 3rem;
+        }
+
+        .card-img {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card-img:hover {
+            transform: scale(1.02);
+        }
+
+        .btn-dark-antonio {
+            background-color: #313442;
+            border: none;
+            width: 10rem;
+            height: 3rem;
+            color: white;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .btn-light-git,
+        .btn-light-link,
+        .btn-light-x,
+        .btn-light-dribble {
+            background-color: white;
+            border: none;
+            border-radius: 70%;
+            width: 3rem;
+            height: 3rem;
+            color: black;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .btn-light-git:hover {
+            color: white;
+            background-color: #313442;
+        }
+
+        .btn-light-link:hover {
+            color: white;
+            background-color: #0e76a8;
+        }
+
+        .btn-light-x:hover {
+            color: white;
+            background-color: #1da1f2;
+        }
+
+        .btn-dark-antonio:hover {
+            background-color: #43485F;
+            color: white;
+        }
+
+        .btn-light-dribble:hover {
+            color: white;
+            background-color: #ea4c89;
+        }
+
+
+        @media (max-width: 767px) {
+        /* Your CSS rules for mobile devices go here */
+            .testo-titolo {
+                font-size: 24px;
+            }
+            .sottotitolo {
+                font-size: 14px;
+            }
+            .titolo-progetti {
+                font-size: 14px;
+            }
+            .sottotitolo-progetti {
+                font-size: 10px;
+            }
+            .card-img {
+                transition: none;
+            }
+            .card-img:hover {
+                transform: none;
+            }
+            
+        }
+        
     </style>
   </head>
   <body>
@@ -83,70 +175,80 @@
 
     <!-- Homepage -->
     <div class="container">
-        <div class="row align-items-start">
-            <div class="col">
-                <div class="card mb-4" style="width: 50rem; background: rgb(241,241,241);
+        <div class="row align-items-start mb-4 gy-4">
+            <div class="col-xl-8">
+                <div class="card" style="background: rgb(241,241,241);
                 background: linear-gradient(107deg, rgba(241,241,241,1) 0%, rgba(200,218,210,1) 67%, rgba(241,220,165,1) 100%); border: none;">
                     <div class="card-body mb-3">
-                        <h5 class="testo-titolo ms-4 mt-4">Ciao, Io sono Antonio, <br> uno sviluppatore <br> con esperienza in UI/UX.</h5>
-                        <p class="mt-lg-5 ms-4 sottotitolo">Nel mio tempo libero, amo esplorare nuove tecnologie, partecipare a conferenze e corsi per rimanere sempre aggiornato e collaborare con altri professionisti per sviluppare progetti stimolanti. Ho una forte attenzione ai dettagli e un'attitudine creativa che mi permette di tradurre le idee in soluzioni innovative.</p>
-                        <a href="#" class="btn btn-light ms-4 mt-lg-5" > <i class="bi bi-facebook"></i> </a>
-                        <a href="#" class="btn btn-light ms-3 mt-lg-5" > <i class="bi bi-github"></i> </a>
-                        <a href="#" class="btn btn-light ms-3 mt-lg-5" > <i class="bi bi-twitter"></i> </a>
+                        <div class="col">
+                            <h5 class="testo-titolo ms-4 mt-4 mb-4">Ciao, Io sono Antonio, <br> uno sviluppatore <br> con esperienza in UI/UX.</h5>
+                            <p class=" ms-4 sottotitolo" style="width: 80%;">Ho una forte attenzione ai dettagli e un'attitudine creativa che mi permette di tradurre le idee in soluzioni innovative.</p>
+                        </div>
+                        <div class="row gy-2 gx-0"> 
+                            <div class="col-lg">
+                                <input type="button" class="btn btn-dark-antonio mt-lg-5 ms-4" value="Contattami">
+                            </div>
+                            <div class="col">
+                                <a href="#" class="btn btn-light-git ms-4 mt-lg-5" > <i class="bi bi-github"></i> </a>
+                                <a href="#" class="btn btn-light-link ms-4 mt-lg-5" > <i class="bi bi-linkedin"></i> </a>
+                                <a href="#" class="btn btn-light-x ms-4 mt-lg-5" > <i class="bi bi-twitter"></i> </a>
+                                <a href="#" class="btn btn-light-dribble ms-4 mt-lg-5" > <i class="bi bi-dribbble"></i> </a>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card mb-4" style="border: none;">
+                <div class="card">
                     <div class="card-body p-0">
-                        <div class="col text-end me-lg-5">
-                            <a href="" class="mt-lg-4" style="position: absolute; color: white; font-size: 2rem;"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
+                        <div class="col text-end" style="margin-right: 3rem;">
+                            <a href="" class="mt-lg-4 freccia"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
                         </div>
-                        <img src="AnyConv.com__Frame 48.webp" class="card-img" alt="..." style="border: none;">
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="row align-items-start">
-            <div class="col">
-                <div class="card" style="border: none;">
-                    <div class="card-body p-0">
-                        <div class="col text-end me-lg-5">
-                            <a href="" class="mt-lg-4" style="position: absolute; color: white; font-size: 2rem;"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
-                        </div>
-                        <img src="AnyConv.com__Frame 44.webp" class="card-img" alt="..." style="border: none;">
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="border: none;">
-                    <div class="card-body p-0">
-                        <div class="col text-end me-lg-5">
-                            <a href="" class="mt-lg-4" style="position: absolute; color: white; font-size: 2rem;"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
-                        </div>
-                        <img src="AnyConv.com__Frame 45.webp" class="card-img" alt="..." style="border: none;">
+                        <img src="AnyConv.com__Frame 48.webp" class="card-img" alt="..." style="border: none; min-width: 20rem;">
                     </div>
                 </div>
             </div>
         </div> 
-        <div class="row align-items-start mt-3">
+        <div class="row align-items-start mb-4 gy-4">
             <div class="col">
-                <div class="card" style="border: none;">
+                <div class="card">
                     <div class="card-body p-0">
-                        <div class="col text-end me-lg-5">
-                            <a href="" class="mt-lg-4" style="position: absolute; color: white; font-size: 2rem;"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
+                        <div class="col text-end" style="margin-right: 3rem;">
+                            <a href="" class="mt-lg-4 freccia"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
                         </div>
-                        <img src="AnyConv.com__Frame 47.webp" class="card-img" alt="..." style="border: none;">
+                        <img src="AnyConv.com__Frame 44.webp" class="card-img" alt="..." style="border: none; min-width: 20rem;">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div class="col text-end" style="margin-right: 3rem;">
+                            <a href="" class="mt-lg-4 freccia"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
+                        </div>
+                        <img src="AnyConv.com__Frame 45.webp" class="card-img" alt="..." style="border: none; min-width: 20rem;">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row align-items-start mb-4 gy-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div class="col text-end" style="margin-right: 3rem;">
+                            <a href="" class="mt-lg-4 freccia"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
+                        </div>
+                        <img src="AnyConv.com__Frame 47.webp" class="card-img" alt="..." style="border: none; min-width: 20rem;">
                     </div>
                 </div>
             </div>
             <div class="col mb-5">
-                <div class="card" style="border: none;">
+                <div class="card">
                     <div class="card-body p-0">
-                        <div class="col text-end me-lg-5">
-                            <a href="" class="mt-lg-4" style="position: absolute; color: white; font-size: 2rem;"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
+                        <div class="col text-end" style="margin-right: 3rem;">
+                            <a href="" class="mt-lg-4 freccia"> <i class="bi bi-arrow-up-right-circle-fill"></i> </a>
                         </div>
-                        <img src="AnyConv.com__Frame 46.webp" class="card-img" alt="..." style="border: none;">
+                        <img src="AnyConv.com__Frame 46.webp" class="card-img" alt="..." style="border: none; min-width: 20rem;">
                     </div>
                 </div>
             </div>
